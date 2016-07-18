@@ -8,6 +8,7 @@ using namespace std;
 int main()
 {
 	setlocale(LC_ALL, "rus");
+	// Не объявляйте переменный в одной строке
 	int total, intotal, cycle = 0, ok = 0, evaluation, attempts = 1, max1, max2, i1, i2;
 	int complexity;
 	srand(time(NULL));
@@ -64,7 +65,7 @@ int main()
 			i1 = 100;
 			i2 = 100;
 		default: 
-		break;
+			break;
 		}
 		int number1 = rand() % max1 + i1;
 		int number2 = rand() % max2 + i2;
